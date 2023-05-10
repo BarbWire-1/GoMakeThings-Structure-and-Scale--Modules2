@@ -1,7 +1,7 @@
 {
   "name": "gomakethings-structure-and-scale-modules2",
   "version": "1.0.0",
-  "description": "structuring modules by bundling",
+  "description": "sevenSeas bundled more efficient",
   "scripts": {
     "js": "rollup --config"
     },
