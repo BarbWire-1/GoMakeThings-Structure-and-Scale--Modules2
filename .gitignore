@@ -1,0 +1,11 @@
+## Personal
+*.txt
+
+## OS 
+.DS_Store
+
+## Node
+node_modules
+
+## PNPM
+*.yaml
