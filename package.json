@@ -1,0 +1,20 @@
+{
+  "name": "gomakethings-structure-and-scale-modules2",
+  "version": "1.0.0",
+  "description": "structuring modules by bundling",
+  "scripts": {
+    "js": "rollup --config"
+    },
+    "devDependencies": {
+        "rollup": "^2.4.0"
+    },
+  "keywords": [
+    "rollup",
+    "bundling",
+    "multiple",
+    "files",
+    "modules"
+  ],
+  "author": "BarbWire-1 aka Barbara Kälin",
+  "license": "MIT"
+}
