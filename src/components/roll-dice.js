@@ -1,7 +1,3 @@
-/*
- *   Copyright (c) 2023 
- *   All rights reserved.
- */
 
 import {shuffle} from '../helpers.js'
 class RollDice extends HTMLElement {

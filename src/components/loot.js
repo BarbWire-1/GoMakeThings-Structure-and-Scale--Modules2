@@ -1,7 +1,4 @@
-/*
- *   Copyright (c) 2023 
- *   All rights reserved.
- */
+
 import TreasureChest from './treasure-chest.js';
 
 

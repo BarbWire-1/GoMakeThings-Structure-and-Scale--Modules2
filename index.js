@@ -1,10 +1,13 @@
+/*! gomakethings-structure-and-scale-modules2
+v1.0.0
+sevenSeas bundled more efficient
+Copyright 2023
+MIT license */
+
+
 (function () {
     'use strict';
 
-    /*
-     *   Copyright (c) 2023 
-     *   All rights reserved.
-     */
     function shuffle(array){
 
         let currentIndex = array.length;
@@ -44,10 +47,6 @@
 
     }
 
-    /*
-     *   Copyright (c) 2023 
-     *   All rights reserved.
-     */
     class TreasureChest {
 
         #bronze;
@@ -164,12 +163,6 @@
         }
 
     }
-
-    /*
-     *   Copyright (c) 2023 
-     *   All rights reserved.
-     */
-
 
     // Hold the treasure instance
     let treasure;

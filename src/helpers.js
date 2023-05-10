@@ -1,7 +1,4 @@
-/*
- *   Copyright (c) 2023 
- *   All rights reserved.
- */
+
 function shuffle(array){
 
     let currentIndex = array.length;

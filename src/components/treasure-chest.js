@@ -1,7 +1,3 @@
-/*
- *   Copyright (c) 2023 
- *   All rights reserved.
- */
 
 import {shuffle, emit} from '../helpers.js'
 class TreasureChest {
