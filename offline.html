@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Offline | Your first service worker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            direction: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Uh oh!</h1>
+
+    <p>You're offline...</p>
+    <link rel="preload" href="./assets/offline.jpeg" as="image">
+<img src="./assets/offline.jpeg" alt="offline" width="500" height="333">
+
+    <script>
+        if (navigator && navigator.serviceWorker) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+
+</html>
