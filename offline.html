@@ -10,21 +10,27 @@
         body {
             margin: 0;
             padding: 0;
-            direction: flex;
-            flex-direction: column;
+            background-color: rgb(68, 81, 85) ;
+            
+        }
+        .center-screen {
+            display: flex;
             justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
         }
     </style>
 </head>
 
 <body>
+<div width="80%" class="center-screen">
+        <!-- <h1>Uh oh!</h1>
 
-    <h1>Uh oh!</h1>
-
-    <p>You're offline...</p>
-    <!-- <link rel="preload" href="./assets/offline.jpeg" as="image"> -->
-<img src="./assets/offline.jpeg" alt="offline" width="500" height="333">
-
+        <p>You're offline...</p> -->
+        <!-- <link rel="preload" href="./assets/offline.jpeg" as="image"> -->
+    <img src="./assets/offline.jpeg" alt="offline" width="80%" >
+<div>
     <script>
         if (navigator && navigator.serviceWorker) {
             navigator.serviceWorker.register('sw.js');
