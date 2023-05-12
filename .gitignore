@@ -1,4 +1,4 @@
-## Personal
+## Private
 *.txt
 
 ## OS 
@@ -9,3 +9,8 @@ node_modules
 
 ## PNPM
 *.yaml
+
+## not needed after bundling
+assets
+pages
+src

@@ -33,7 +33,7 @@ self.addEventListener('fetch', function (event) {
             fetch(request).then(function (response) {
                 return response;
             }).catch(function (error) {
-                return caches.match('offline.html');
+                return caches.match('offline.html' || '../offline.html');
             })
         );
     }
