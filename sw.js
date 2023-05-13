@@ -1,15 +1,30 @@
+/**
+ * this seems to work now, but when loading a file other than in the root folder it throws from the loaded html:
+ * 
+ * Uncaught (in promise) TypeError: Failed to register a ServiceWorker for scope ('http://localhost:8080/pages/') with script ('http://localhost:8080/pages/sw.js'): A bad HTTP response code (404) was received when fetching the script.
+ * 
+ * also it seemes to be quicker offline this way
+ */
+
+
+
 // Core assets
 let coreAssets = [
-    'offline.html',
-    'offline.jpeg',
-    'favicon.ico',
-    'index.html',
-    'treasure.html',
-    'dice.html',
-    'style.css',
     'index.js',
+    'index.html',
+    'style.css',
     'treasure.js',
     'dice.js',
+    
+    'pages/offline.html',
+    'pages/treasure.html',
+    'pages/dice.html',
+    
+    'assets/offline.jpeg',
+    'assets/favicon.ico',
+    
+    
+    
     
 ];
 
