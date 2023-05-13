@@ -1,6 +1,6 @@
-/*! gomakethings-structure-and-scale-modules2
+/*! gomakethings-structure-and-scale-cachestrategies
 v1.0.0
-sevenSeas bundled more efficient
+Seven Seas - Cache Strategies
 Copyright 2023
 MIT license */
 
