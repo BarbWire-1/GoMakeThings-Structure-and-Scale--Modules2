@@ -1,7 +1,7 @@
 {
-  "name": "gomakethings-structure-and-scale-modules2",
+  "name": "gomakethings-structure-and-scale-cachestrategies",
   "version": "1.0.0",
-  "description": "sevenSeas bundled more efficient",
+  "description": "Seven Seas - Cache Strategies",
   "scripts": {
     "js": "rollup --config"
   },
@@ -19,5 +19,14 @@
   "license": "MIT",
   "dependencies": {
     "python": "0.0.4"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarbWire-1/GoMakeThings-Structure-and-Scale--Modules2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BarbWire-1/GoMakeThings-Structure-and-Scale--Modules2/issues"
+  },
+  "homepage": "https://github.com/BarbWire-1/GoMakeThings-Structure-and-Scale--Modules2#readme"
 }

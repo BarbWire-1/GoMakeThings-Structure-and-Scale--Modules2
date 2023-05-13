@@ -53,7 +53,7 @@ self.addEventListener('fetch', function (event) {
                 return response;
             }).catch(function (error) {
                 return caches.match(request).then(function (response) {
-                    return response || caches.match('offline.html');
+                    return response || caches.match('offline.html') /*&& catches.match('offline.jpeg')*/;
                 });
             })
         );
@@ -74,5 +74,7 @@ self.addEventListener('fetch', function (event) {
             })
         );
     }
+    
+    
 
 }); 
