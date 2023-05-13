@@ -11,7 +11,6 @@ node_modules
 *.yaml
 
 ## not needed after bundling
-assets
-pages
+
 src
 
