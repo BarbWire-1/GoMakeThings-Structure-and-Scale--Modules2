@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>Offline | Your first service worker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- <link rel="import" href="component.html"> -->
+    <link rel="preload" href="offline.jpeg" as="image">
     <style type="text/css">
         body {
             margin: 0;
@@ -30,11 +31,6 @@
         <h1 class="center-screen">Oh, you lost your track...<br>To continue your exciting journey you need to reconnect</h1>
     <img src="offline.jpeg" alt="There should be an imge telling you" width="80%" >
 <div>
-    <!-- <script>
-        if (navigator && navigator.serviceWorker) {
-            navigator.serviceWorker.register('sw.js');
-        }
-    </script> -->
     <script src="resgisterSW.js"></script>
 </body>
 

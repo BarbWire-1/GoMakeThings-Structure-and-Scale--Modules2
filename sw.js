@@ -62,7 +62,7 @@ self.addEventListener('fetch', function (event) {
     
     // CSS , JavaScript, images
     // Offline-first (If allready cached take the cached versione, else fetch)
-    if (request.headers.get('Accept').includes('text/css') || request.headers.get('Accept').includes('text/javascript') || request.headers.get('Accept').includes('image') ){
+    if (request.headers.get('Accept').includes('text/css') || request.headers.get('Accept').includes('text/javascript') /*|| request.headers.get('Accept').includes('image') */){
         event.respondWith(
             caches.match(request).then(function (response) {
                 return response || fetch(request).then(function (response) {
@@ -76,5 +76,29 @@ self.addEventListener('fetch', function (event) {
     }
     
     
+  
+    //TESTING THIS AS ABOVE DOES NOT INPUT THE JPEG IN OFFLINE:HTML
+    // Image files
+    // Offline-first
+    if (request.headers.get('Accept').includes('image')) {
+        event.respondWith(
+            caches.match(request).then(function (response) {
+                return response || fetch(request).then(function (response) {
+
+                    // If the request is for an image, save a copy of it in cache
+                    if (request.headers.get('Accept').includes('image')) {
+                        let copy = response.clone();
+                        event.waitUntil(caches.open('app').then(function (cache) {
+                            return cache.put(request, copy);
+                        }));
+                    }
+
+                    // Return the response
+                    return response;
+
+                });
+            })
+        );
+    }
 
 }); 
