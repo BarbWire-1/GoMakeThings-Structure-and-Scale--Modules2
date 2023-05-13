@@ -4,10 +4,10 @@
   "description": "sevenSeas bundled more efficient",
   "scripts": {
     "js": "rollup --config"
-    },
-    "devDependencies": {
-        "rollup": "^2.4.0"
-    },
+  },
+  "devDependencies": {
+    "rollup": "^2.4.0"
+  },
   "keywords": [
     "rollup",
     "bundling",
@@ -16,5 +16,8 @@
     "modules"
   ],
   "author": "BarbWire-1 aka Barbara Kälin",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "python": "0.0.4"
+  }
 }
