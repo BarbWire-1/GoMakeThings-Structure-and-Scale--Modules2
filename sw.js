@@ -23,9 +23,6 @@ let coreAssets = [
     'assets/offline.jpeg',
     'assets/favicon.ico',
     
-    
-    
-    
 ];
 
 
